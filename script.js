@@ -48,12 +48,15 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
 
 
 // Part 1: Math Problems
+// Check if all numbers are divisible by 5. Cache the result in a variable.
 const isDivBy5 = (n1 % 5) + (n2 % 5) + (n3 % 5) + (n4 % 5) === 0
 console.log(isDivBy5) // true
 
+// Check if the first number is larger than the last. Cache the result in a variable.
 const isOver5 = (n1 > n4) 
 console.log(isOver5) // true
 
+// arithmetic chain:
 let chain = (n1 - n2)
 console.log(chain) // -5
 
@@ -63,21 +66,40 @@ console.log(chain2) // -100
 let chain3 = (chain / n4)
 console.log(chain3) // -1
 
-let chain4 = ()
+// let chain4 = ()
 
 
 
 // Part 2: Practical Math
 // variables for each miles, use const, use string concatnation
+
 const disTrip = 1500
-const mph1 = 55
-const mph2 = 60
-const mph3 = 75
-const mpg1 = 30
-const mpg2 = 28
-const mpg3 = 23
+const mph55 = 55
+const mph60 = 60
+const mph75 = 75
+// const mph55 = ("30 miles per gal @ 55 mph")
+// const mph60 = ("28 miles per gal @ 60 mph")
+// const mph75 = ("23 miles per gal @ 75 mph")
+const mpg30 = 30
+const mpg28 = 28
+const mpg23 = 23
 const fuel = 175
 const avgFpg = 3
 
+let gal1 = (disTrip / mpg30)
+console.log(gal1) // 50
 
+let gal2 = (disTrip / mpg28)
+console.log(gal2) // 53.571
 
+let gal3 = (disTrip / mpg23)
+console.log(gal3) // 65.217
+
+let hr1 = (disTrip / mph55)
+console.log(hr1)
+
+let hr2 = (disTrip / mph60)
+console.log(hr2)
+
+let hr3 = (disTrip / mph75)
+console.log(hr3)
