@@ -20,6 +20,7 @@ const isTwoOdd = (n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2;
 // This time, we use the OR operator to check
 // if ANY of the numbers is larger than 25.
 const isOver25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25;
+console.log(isOver25)
 
 // Check four: all unique numbers
 // This is long, and there are more efficient
@@ -47,7 +48,36 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
 
 
 // Part 1: Math Problems
-const divBy5 = (n1 % 5) + (n2 % 5) + (n3 % 5) + (n4 % 5) === 0
-console.log(divBy5)
+const isDivBy5 = (n1 % 5) + (n2 % 5) + (n3 % 5) + (n4 % 5) === 0
+console.log(isDivBy5) // true
 
-const 
+const isOver5 = (n1 > n4) 
+console.log(isOver5) // true
+
+let chain = (n1 - n2)
+console.log(chain) // -5
+
+let chain2 = (chain * n3)
+console.log(chain2) // -100
+
+let chain3 = (chain / n4)
+console.log(chain3) // -1
+
+let chain4 = ()
+
+
+
+// Part 2: Practical Math
+// variables for each miles, use const, use string concatnation
+const disTrip = 1500
+const mph1 = 55
+const mph2 = 60
+const mph3 = 75
+const mpg1 = 30
+const mpg2 = 28
+const mpg3 = 23
+const fuel = 175
+const avgFpg = 3
+
+
+
